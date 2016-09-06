@@ -96,5 +96,8 @@ io.sockets.on('connect', function(socket){
 //HEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHEREHERE
 });
 
-server.listen(8080);
-console.log('Listening on Port 8080.');
+server.listen({
+	host: 'http://brettburdick.com/whiteboardIM',
+	port: 80,
+	exclusive: true
+});
